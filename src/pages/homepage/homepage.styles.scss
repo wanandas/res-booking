@@ -1,0 +1,48 @@
+.home {
+  height: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+
+  .search-input {
+    border-radius: 10px;
+    border-right: 0px solid gainsboro;
+    font-size: 15px;
+    width: 425px;
+    padding: 16px;
+  }
+}
+
+input {
+  border-width: inherit;
+  outline: none;
+}
+
+.recommendations {
+  background: #fff;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 600px;
+
+  .head-res {
+    border-bottom: 1px solid gainsboro;
+
+    align-self: flex-start;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 50px 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    .search-input {
+      width: 300px;
+    }
+  }
+}

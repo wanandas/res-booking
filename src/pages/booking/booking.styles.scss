@@ -1,0 +1,62 @@
+.booking-container {
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #eee;
+  height: auto;
+  height: 90vh;
+  padding: 10px;
+
+  h1 {
+    margin: 10px 0;
+  }
+  .res-img {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+  }
+
+  .date-time-container {
+    display: flex;
+    flex-direction: row;
+    .datePick {
+      border-right: 0px solid gainsboro;
+      font-size: 15px;
+      width: 205px;
+      padding: 16px;
+    }
+
+    .search-input-submit {
+      color: white;
+      border-radius: 0 10px 10px 0;
+      border-right: 0px solid gainsboro;
+      font-size: 15px;
+      width: 205px;
+      padding: 5px;
+      background-color: red;
+    }
+  }
+
+  .res-about {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .booking-container {
+    height: 100%;
+    .date-time-container {
+      display: flex;
+      flex-direction: column;
+
+      .search-input-submit {
+        width: 205px;
+        border-radius: 0;
+        padding: 16px;
+        align-self: center;
+      }
+    }
+  }
+}

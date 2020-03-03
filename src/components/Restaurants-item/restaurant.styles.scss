@@ -1,0 +1,44 @@
+.restaurant-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 25px;
+  cursor: pointer;
+  -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+  background: #eee;
+  color: #222;
+  text-decoration: none;
+  font-size: 10px;
+  img {
+    height: 150px;
+    width: 150px;
+    align-self: center;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .restaurant-container {
+    height: 200px;
+    width: 300px;
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .restaurant-container {
+    grid-template-columns: 1fr;
+  }
+}
